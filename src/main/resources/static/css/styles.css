@@ -1,0 +1,433 @@
+* {
+
+    box-sizing : border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans',sans-serif;
+
+
+}
+/*-----------------NAVBAR----------------------------------*/
+
+/*------------------MAIN---------------------*/
+
+.main{
+    background:linear-gradient(to bottom, #525925 0%, #141414 97%)
+}
+
+
+.main_container {
+    /* background-color: #000000; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* align-items: center; */
+    justify-self: center;
+    margin: 0 auto;
+    height: 86vh;
+    z-index: 1;
+    /* max-width: 1300px; */
+    padding: 10px 50px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%), url(../images/background-photo.jpg);
+    background-size: cover;
+}
+
+.main_content h1 {
+    font-size: 3rem;
+    background-image: linear-gradient(to top, #ffc200 0%, #f48605 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    /* color: #917211; */
+    padding-top: 10px;
+}
+
+.main_content h2 {
+    font-size: 1.5rem;
+    /* color: aqua; */
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ffc200 100%, #ffc200 0%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    padding-top:5px;
+}
+
+.main_content p{
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.main_btn {
+    font-size: 1rem;
+    background-color: rgb(0, 0, 0, 0.6);
+    padding: 14px 30px;
+    border: none;
+    /* border-bottom-right-radius: 30px; */
+    /* border-top-left-radius: 30px; */
+    border-radius: 10px;
+    border: 2px solid #ffc200;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.4s;
+    outline: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+
+
+.main_btn a {
+    position: relative;
+    z-index: 2;
+    color: #ffc200;
+    text-decoration: none;
+}
+
+.main_btn:hover a {
+color:black
+}
+
+.main_btn:hover{
+    background:#ffc200;
+
+}
+
+.main_img-container{
+    text-align: center;
+}
+
+#main_img{
+    height: 90%;
+    width: 80%;
+}
+
+
+/* MOBLIE RESPONSIVENESS*/
+@media screen and (max-width: 768px){
+
+    .nav_img{
+        filter:brightness(100%);
+        margin-left: 13%;
+    }
+
+    .main_container{
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin: 0 auto;
+        height: 90vh;
+    }
+    .main_content{
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .main_content h1{
+        font-size: 2.5rem;
+        margin-top: 2rem;
+    }
+
+    .main_content h2{
+        font-size: 3rem;
+
+    }
+
+    .main_content p{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    #main_img{
+        height: 90%;
+        width: 80%;
+    }
+
+}
+@media screen and ( max-width: 480px){
+    .main_content h1{
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .main_conent h2{
+        font-size:2rem;
+
+    }
+
+    .main_content p{
+        margin-top: 3rem;
+        font-size: 1.5rem;
+    }
+    .main_btn{
+        padding: 12px 36px;
+        margin:2.5rem 0;
+    }
+}
+
+/*--------------------SERVICES-----------------*/
+
+.services{
+    background: #141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.service-header{
+    padding-top:1.5em;
+}
+.services h1 {
+    /* background-color: #49ba14; */
+    background-image: linear-gradient(to right, #ff8900 0%, #e9e91b 50%, #ff8100 21%, #f3c845f2 52%, #e9e91b 78%, #fe7f00 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    padding-left: 20px;
+}
+.services_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.services_card{
+    margin: 1rem;
+    height: 524px;
+    width: 427px;
+    border-radius: 4px;
+    background-size: cover;
+    background-position-x: -259px;
+    position: relative;
+    color: white;
+
+}
+.services_card:nth-child(2) {
+    background-position-x: -163px;
+}
+.services h2{
+
+    top: 11%;
+    position: absolute;
+    margin-left: 5%;
+}
+
+.services_card p{
+    position: absolute;
+    top: 20%;
+    padding-left: 4%;
+}
+.services_card button a{
+    position:relative;
+    z-index: 2;
+    color:#ffc200;
+    text-decoration: none;
+}
+.services_card button {
+    position: absolute;
+    color: white;
+    padding: 10px 10px;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgb(0,0,0,0.3);
+    top: 87%;
+    left: 35%;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid #ffc200;
+}
+
+.services_card:hover {
+    transform: scale(1.045);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: 4px solid #ffc200;
+}
+.services_card button:hover {
+    background-color: #ffc200;
+    transition: all 0.4s;
+}
+.services_card button:hover a{
+    color:black;
+}
+
+@media screen and (max-width: 960px){
+    .nav_img{
+        filter:brightness(100%);
+        margin-left: 10%;
+    }
+
+    .services{
+        height:1600px;
+    }
+    .services h1{
+        font-size: 2rem;
+        margin-top:1rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .services{
+        height: 1400px;
+    }
+    .services h1 {
+        font-size: 1.2rem;
+    }
+    .services_card{
+        width:300px;
+
+    }
+}
+
+/*--------------------SERVICES---------END-----------------*/
+
+/*------------------FOOTER---------------------------------*/
+
+/*------------------LOGIN PAGE------------------------------*/
+.description-main-container {
+    height: 90vh;
+}
+.description-info {
+    /*background-color: black;
+    */
+display: table-cell;
+    /* height: 90vh; */
+    align-items: center;
+    text-align: center;
+    padding-left: 90px;
+}
+
+button#rent {
+    background: transparent;
+    border: none;
+}
+buton#rent a {
+    width: 150px;
+}
+.main-info p{
+    color:white;
+
+}
+.description-info h1{
+    font-size: 2rem;
+    color: #fff;
+    padding-bottom: 25px;
+
+}
+.description-info h2{
+    font-size: 1rem;
+    color: #fff;
+    padding-bottom: 25px;
+}
+.description-info li{
+    position: relative;
+    width: 20vh;
+    margin-top: 1%;
+    margin-left: 11.5%;
+}
+
+.merch_card{
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to top,
+    rgba(0,0,0,0) 2%,
+    rgba(17,10,60,0.9) 100%),
+    url('static/images/huracan.jpg');
+    background-size: cover;
+    background-position-x: -170px ;
+    position: relative;
+    color:white;
+}
+
+.merch_card p{
+    position: absolute;
+    top: 20%;
+    padding-left: 4%;
+}
+.merch_card button a{
+    position:relative;
+    z-index: 2;
+    color:white;
+    text-decoration: none;
+}
+.merch_card button{
+    position: absolute;
+    color: white;
+    padding: 10px 10px;
+    outline: none;
+    border-radius:10px ;
+    background-color:#f051f0;
+    top: 87%;
+    left: 35%;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.merch_card button:hover{
+
+    background-color: rgb(196, 255, 47);
+    transition: all 0.7s;
+
+    text-decoration: none;
+}
+.merch_card:hover{
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+
+/*--------------CAR_INFO-------------------------------*/
+
+/*----------------------------------ABOUT_PAGE----------*/
+/*------------------------------------------------------*/
+
+
+
+.alert-danger {
+    color: #ffffff;
+    background-color: #b82330;
+    border-color: #f5c6cb;
+    padding: .75rem 1.25rem;
+    margin-bottom: 2%;
+    border-radius: 5px;
+}
+
+/* CAR ADD FORM*/
+#carAdd-container {
+    max-width: 600px;
+    /* margin: 30px auto; */
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 15%;
+    opacity: 90%;
+}
+.part1,
+.group-part2{
+    display: flex;
+}
+.part1 .form-group,
+.group-part2 .form-group{
+     margin-left: 1em;
+ }
+select#powerTrain {
+    border-radius: 6px;
+    padding: 0.7em;
+}
